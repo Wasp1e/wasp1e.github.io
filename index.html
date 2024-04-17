@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WiseWallet</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar navbar-dark bg-black">
+        <a class="navbar-brand" href="#main"
+          ><img class="logo" src="/images/logo.png" alt="Company Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">О Нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#login">Вход</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Первый экран -->
+    <main id="main">
+      <div id="banner" class="slider-back">
+        <div class="slider-contain text-center">
+          <div class="text">
+            <h1>
+              <p class="poppins-bold">WiseWallet</p>
+            </h1>
+            <p class="lead">
+              Виртуальный помощник для эффективного управления личными финансами
+            </p>
+          </div>
+          <!-- Слайдер -->
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleCaptions"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="img-block">
+                  <img
+                    src="/images/AI.png"
+                    class="d-block w-100"
+                    alt="Искуственный интелект"
+                  />
+                </div>
+                <div class="text-slider t-aleft font-size">
+                  <h2>Персонализированные рекомендации</h2>
+                  <p class="poppins-bold">
+                    Используя алгоритмы машинного обучения, приложение
+                    анализирует финансовое поведение пользователя и предлагает
+                    индивидуальные рекомендации по оптимизации расходов и
+                    увеличению сбережений.
+                  </p>
+                  <a
+                    class="btn btn-primary btn-lg openModalBtn"
+                    href="#demo"
+                    role="button"
+                    >Запросить Демо-версию</a
+                  >
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="img-block">
+                  <img
+                    src="/images/finance.png"
+                    class="d-block w-100"
+                    alt="Прогнозирование финансового будущего"
+                  />
+                </div>
+                <div class="text-slider t-aleft font-size">
+                  <h2>Прогнозирование финансового будущего</h2>
+                  <p class="poppins-bold">
+                    На основе данных о финансовой истории пользователя
+                    приложение может предсказывать его финансовое будущее и
+                    предупреждать о потенциальных финансовых трудностях.
+                  </p>
+                  <a
+                    class="btn btn-primary btn-lg openModalBtn"
+                    href="#demo"
+                    role="button"
+                    >Запросить Демо-версию</a
+                  >
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="img-block">
+                  <img
+                    src="/images/auto.png"
+                    class="d-block w-100"
+                    alt="Автоматические финансовые операции"
+                  />
+                </div>
+                <div class="text-slider t-aleft font-size">
+                  <h2>Автоматические финансовые операции</h2>
+                  <p class="poppins-bold">
+                    На основе данных о финансовой истории пользователя
+                    приложение может предсказывать его финансовое будущее и
+                    предупреждать о потенциальных финансовых трудностях.
+                  </p>
+                  <a class="btn btn-primary btn-lg openModalBtn" role="button"
+                    >Запросить Демо-версию</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Секция "О нас" -->
+      <section id="about" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb">О Нас</h2>
+          <h5 class="h5">
+            Мы разрабатываем приложение с использованием искусственного
+            интеллекта, которое помогает людям эффективно управлять своими
+            финансами. Пользователи могут подключить к приложению свои
+            банковские счета, кредитные карты и другие финансовые инструменты
+            для автоматического отслеживания расходов, составления бюджета и
+            получения рекомендаций по экономии.
+          </h5>
+          <h2 class="text-center mb">Преимущества</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <img src="/images/innovation.png" alt="Инновация" />
+                  <h5 class="card-title">Инновационный подход</h5>
+                  <p class="card-text">
+                    Мы разрабатываем передовые технологии, которые помогают
+                    людям эффективно управлять своими финансами.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <img src="/images/comfort.png" alt="Комфорт" />
+                  <h5 class="card-title">Удобство использования</h5>
+                  <p class="card-text">
+                    Наш виртуальный помощник создан для того, чтобы облегчить
+                    жизнь пользователей. Он интуитивно понятен и легок в
+                    использовании.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <img src="/images/safe.png" alt="Безопасность" />
+                  <h5 class="card-title">Надежность и безопасность</h5>
+                  <p class="card-text">
+                    Мы придаем большое значение защите данных наших клиентов.
+                    Все данные хранятся на защищенных серверах, а доступ к ним
+                    имеют только авторизованные сотрудники.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция услуг -->
+      <section id="services" style="margin-bottom: 50px" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb">Наши услуги</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <img src="/images/analiz.png" alt="Анализ" />
+                  <h5 class="card-title">Анализ вашего кошелька</h5>
+                  <p class="card-text">
+                    Анализ финансовых данных пользователя и предоставление
+                    рекомендаций по оптимизации расходов и увеличению доходов.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <img src="/images/sup.png" alt="Поддержка" />
+                  <h5 class="card-title">Техническая поддержка</h5>
+                  <p class="card-text">
+                    Поддержка клиентов в случае возникновения проблем или
+                    вопросов при использовании виртуального помощника.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <img src="/images/update.png" alt="Обновления" />
+                  <h5 class="card-title">Обновления</h5>
+                  <p class="card-text">
+                    Регулярные обновления программного обеспечения для улучшения
+                    функциональности и безопасности виртуального помощника.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Модальное окно -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span id="closeModalBtn" class="close">
+            <svg
+              class="closesvg"
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.5 6.5L6.5 19.5"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6.5 6.5L19.5 19.5"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <div class="modal1">
+            <h3 class="h3modal">Получить Демо-версию приложения</h3>
+            <form class="questions_form" action="thankyou.html">
+              <input
+                autocomplete="off"
+                class="greyinp"
+                name="nameClient"
+                required
+                placeholder="Ваше имя"
+              />
+              <div class="number">
+                <input
+                  autocomplete="off"
+                  type="tel"
+                  required
+                  class="greyinp phone"
+                  name="phoneClient"
+                  id="phone"
+                  placeholder="+7(___)___-____"
+                />
+              </div>
+              <div class="bord-red">
+                <h5 class="grey">
+                  В течение 15 минут вам перезвонит внимательный менеджер, чтобы
+                  задать уточняющие вопросы и отправит демо на вашу электронную
+                  почту.
+                </h5>
+              </div>
+              <input
+                type="submit"
+                class="greyinp-button"
+                value="Получить Демо"
+              />
+              <div class="inlin">
+                <h5>Заполняя форму на сайте, вы соглашаетесь с нашей</h5>
+                <a class="polit" href="polit">политикой конфиденциальности</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Футер -->
+    <footer id="contact" class="bg-black text-white py-4">
+      <div class="container text-center">
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#"><i class="fab fa-vk"></i></a>
+          </li>
+        </ul>
+        <p>&copy; 2024 WiseWallet. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <!-- Скрипты (Bootstrap, jquery, popper.js, попапы) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/your-embed-code.js"></script>
+    <script src="/js/popups.js"></script>
+    <script src="/js/scrollanimation.js"></script>
+  </body>
+</html>
